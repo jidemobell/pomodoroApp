@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pamodoro
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script2.js"></script>
+</head>
+
+<body>
+
+    <div id="pandobox">
+        <div id="whitebox">
+            <div id="clock">
+                <span id="minutes">25</span>
+                <span id="colon">:</span>
+                <span id="seconds">00</span>
+
+            </div>
+        </div>
+
+        <div class="allbuttons">
+            <a class="waves-effect waves-light btn work">Start Work</a>
+            <a class="waves-effect waves-light btn break">Start Break</a>
+            <a class="waves-effect waves-light btn stop">Stop</a>
+            <a class="waves-effect waves-light btn reset">Reset</a>
+        </div>
+
+        <div id="icondiv">
+
+            <div id="lefticons">
+
+
+
+                <div id="whiteboxleft">
+                    <div id="leftdetails">
+                        <a class="iconanchor"> <span class="plusicon">+</span></a>
+                        <span class="breakletter">Session</span>
+                        <span class="breakletter"> : </span>
+                        <span class="leftbreakletter"> 25 </span>
+                        <a class="iconanchor"> <span class="minusicon">-</span></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="righticons">
+                <div id="whiteboxright">
+                    <div id="rightdetails">
+                        <a class="iconanchor"> <span class="plusicon">+</span></a>
+                        <span class="breakletter"> Break </span>
+                        <span class="breakletter"> : </span>
+                        <span class="rightbreakletter"> 5 </span>
+                        <a class="iconanchor"> <span class="minusicon">-</span></a>
+                    </div>
+                </div>
+                <!--
+                <i class="fa fa-plus-square fa-lg"></i>
+                <a href="https://icons8.com"><img class="icon icons8-Mouse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAERklEQVR4nO2aIUwcQRSGP7ECcQJRcWkqTiAQiIoKBAJRQVMEAoGoOIGoqECQtE0QJAhEBaICgUBUIEhagaxoGkRFRdMgEAgESUlbUXHixCW9infLLbNvd2d2Zu+A7p88dTPv3v/PzHtv5g5q1KhRo0aNGjVuJ1rAKnAAXAJ94DewBywCE2OLrGI8Br4hhPPsBHg4phgrQRM4oph40rrAi3EEGxrzDLd5GXs+8ogD4gXQI02qh5z/RSAajJ0CtpXxXW7pcVhDX9Fj4FHOvFnSO+ak0kgDYwLYAv5yncRPYAOYtPDxFDg15i9UEayJFrIt14DNhK0Dc9iVpx3Sq95BcoELnhs+dhznW2MSIXyMvmXNs3tE9mosKXMugZmScSX9fCrhIxcRkqT+UExcs1PSQuwaY86BaY8YK8sDDwYOy5ampB0AjYHfWWS7xwI1PWKcIC1mEGhZ1sfMs9lE8kWEHxaM7/ng6Q+AZaSuVkU+JA6N73rl63AZvSmxtWOgjWTzZ0jiNBHht+1jTCmx5vUOhZhTHLrYBsVbOkJW7aNPoAOY9wbvChAHV4b8muFngXQ/YPp/5hFrW4lh3sPfFcqIkCQ/jWTiPnDB9fJmlr8LyiXBGYZVJLajEn4AOfPmOXURYTcxb5p05Uhuy0/K/GXHeJuIcEkfHaRkOyOZ8MqI0OH6LU0rm6cJnwfK5y65oAF8VXysOvi4gpbtXUU4TIzdUz7vIXeG2NdZxhibu0OE/liyacXWQF6pcxHhIDHOXN0e17d31rW3j13peqvM27OYl8IsxU2OrQgdhqv3iGFiMsnPkU5aSSt60tpQ5hxRIoE2sW9vbUTQ2tt1JB/EKCJftI1XlfFfGN4rnKBl4bIi2LS3NuTzBFgifVTPKNlFLloEYitCW/EfIYRbyNvcvhK8iwD3SF/B/+BxbbZ5Z7cVwYRPB9lHf9HVkuqcK+kY8x7BFYngS76vEJtRxqw78E2V1TcBBMgSYdPTZ5d0QjN7ijONlIIGshhdZMdfHRfz5TSkCA3s3gmzTHvAMBumFUvyZhzb8QehyFchgnkjjJQxRavfREqjOW8VpCaHFiCUCBcZ5JLV47yA/EPSl6M+chQiCJMAqxKhnUHKPLKLypgISYxaV7tLokusUgAfEb6R3cpuGWMvkaYo9r9EdlnfNJ1pJWXcIlySf39/gN5Bals9th4ZvxDfG4EALiJ0kAtZEVYcvvucguewkO/7PiJ0cOvm2uTfJbpIj1N4MdofkQB5IriSj9FCckK8/XtIydvC4VK0HICYrwhe7/W+mGB0xyBLhLEj70mqKrtRf166D3xmdOTPyW50xoYV4Af/KfkY6/zH5GNoT8whrGypGzki4CXwi3DkPwJPRkkiBBYIUx4Psftb241EC3gNfMed+Hvcf9y8sWggrzPvyP9H2AnSht6Ks+6DJvLaMj+wFnf4//k1atSoUaPGHcQ/8jX63gmz2jYAAAAASUVORK5CYII="
+                        width="64" height="64"></a>
+                <i class="fa fa-minus-square fa-lg"></i>
+                -->
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

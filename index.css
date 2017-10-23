@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(86, 61, 124);
+}
+
+#pandobox {
+    width: 600px;
+    height: 550px;
+    margin: 50px auto;
+    padding: 5px;
+    background-color: rgb(86, 61, 124);
+    border: 3px solid white;
+}
+
+#whitebox {
+    margin: 50px auto;
+    background-color: rgb(36, 195, 206);
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    -webkit-box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62)
+}
+
+.allbuttons {
+    margin-left: 20px;
+}
+
+#whiteboxleft,
+#whiteboxright {
+    margin: 70px auto;
+    background-color: rgb(49, 70, 91);
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    -webkit-box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px -4px 7px -2px rgba(0, 0, 0, 0.62)
+}
+
+.plusicon,
+.minusicon {
+    font-size: 40px;
+    margin: 5px;
+    font-family: 'Poiret One', cursive;
+}
+
+#breakletter {
+    margin: 10px;
+}
+
+#clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-size: 60px;
+    font-family: 'Poiret One', cursive;
+}
+
+#rightdetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+#leftdetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+#icondiv {
+    margin-bottom: 3px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+#rightdetails span {
+    margin: 2px;
+    font-weight: bold;
+}
+
+#rightdetails .fa {
+    color: white;
+    margin: 2px;
+    font-size: 20px;
+}
+
+#leftdetails span {
+    margin: 2px;
+    font-weight: bold;
+}
+
+#leftdetails .fa {
+    color: white;
+    margin: 2px;
+    font-size: 20px;
+}
+
+#lefticons {
+    width: 150px;
+    float: left;
+}
+
+#righticons {
+    width: 150px;
+    float: left;
+    margin-left: 150px;
+}
+
+.icons8-Mouse {
+    margin-bottom: -4px;
+}
+
+.iconanchor {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
